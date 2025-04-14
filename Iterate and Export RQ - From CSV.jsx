@@ -135,7 +135,11 @@ if(selectedFile){
                     var renderItem = renderQueue.item(renderQueue.numItems);
                     var outputModule = renderItem.outputModule(1);
                     var record = data[i]
-                    var fileName = record[namingCollumn];
+                    if(i<10){
+                        var fileName = "0" + i+1 + " " + record[namingCollumn];
+                    }else{
+                        var fileName = i+1 + " " + record[namingCollumn];
+                    }
                     var filePath = renderPath + "/" + fileName;
 
                     switch (formatDropdown.selection.text) {
