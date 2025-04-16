@@ -135,7 +135,7 @@ if(selectedFile){
                     var renderItem = renderQueue.item(renderQueue.numItems);
                     var outputModule = renderItem.outputModule(1);
                     var record = data[i]
-                    if(i<10){
+                    if(i+1<10){
                         var fileName = "0" + i+1 + " " + record[namingCollumn];
                     }else{
                         var fileName = i+1 + " " + record[namingCollumn];
